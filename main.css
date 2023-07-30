@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(105, 182, 156);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header div {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+main {
+    width: 100%;
+}
+
+.sobre-a-loja {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.sobre-a-loja div {
+    width: 100%;
+}
+
+.sobre-a-loja .img-container {
+    width: 40%;
+}
+
+.sobre-a-loja img {
+    max-width: 100%;
+    display: block;
+}
+
+.sobre-a-loja div h1,
+.produtos h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title-underline {
+    height: 3px;
+    background-color: rgb(105, 182, 156);
+    margin-bottom: 30px !important;
+}
+
+.sobre-a-loja div p {
+    text-align: justify;
+}
+
+.produtos {
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.lista-produtos {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.lista-produtos li {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lista-produtos li div {
+    width: 100%;
+    max-width: 300px;
+}
+
+.lista-produtos li div img {
+    width: 100%;
+    display: block;
+}
+
+.lista-produtos button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(105, 182, 156);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+    header {
+        height: 150px;
+    }
+    .sobre-a-loja {
+        flex-direction: column;
+    }
+    .sobre-a-loja .img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .lista-produtos {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .lista-produtos li {
+        max-width: 230px;
+    }
+    .lista-produtos li div {
+        max-width: 230px;
+    }
+}
